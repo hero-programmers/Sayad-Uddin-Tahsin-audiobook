@@ -9,18 +9,18 @@ The program will prompt you to input the `PDF Name`, `Enter the Page Number wher
 ```mermaid
 graph TD;
     name["PDF Name"]
-    startpage["Start"]
-    endpage["End"]
+    startpage["Start Page"]
+    endpage["End Page"]
     code["Script"]
-    pdf["The PDF"]
-    read["Speaker"]
+    pdf["PDF"]
+    speaker["Speaker"]
     
     name-- Input -->code;
     startpage-- Input -->code;
     endpage-- Input -->code;
     code-- Read the PDF -->pdf;
-    pdf-- PDF Text -->code;
-    code-- Start Reading -->read;
+    pdf-- PDF Content -->code;
+    code-- Reading Output -->speaker;
 ```
 
 ## Software Requirements
